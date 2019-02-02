@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Pckg07_TestManyRename"
   DTS:PackageType="5"
-  DTS:VersionBuild="73"
-  DTS:VersionGUID="{AD89047F-A5D8-4947-865B-F03DA16C3F00}">
+  DTS:VersionBuild="79"
+  DTS:VersionGUID="{0D51FBDB-A383-43ED-A6EC-785C73C33DEC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,13 +26,13 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
-          DTS:LocaleID="1033"
+          DTS:LocaleID="1045"
           DTS:HeaderRowDelimiter="_x000D__x000A_"
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probkaArc\XXX.csv">
+          DTS:ConnectionString="D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\XXX.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -41,7 +41,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHOOL CODE"
-              DTS:DTSID="{8262AB8E-6BFD-428B-A131-9FF429C611A9}"
+              DTS:DTSID="{2AF1CAED-E7E5-4D9E-87F9-BF71C2C5E655}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SCHOOL NAME"
-              DTS:DTSID="{96D2A687-204C-4BB6-A0D1-17D1AA740DB4}"
+              DTS:DTSID="{97540016-99C2-4380-8E51-EA5C6A32746B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="GRADE "
-              DTS:DTSID="{770EE680-9994-4172-805D-DD1814C95302}"
+              DTS:DTSID="{0E345FC3-1967-4429-A703-0E5B4984B39C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PROGRAM TYPE"
-              DTS:DTSID="{697EB9ED-79A7-4575-8981-D4F1CA5B55F3}"
+              DTS:DTSID="{895268EA-EA31-4F2F-8BF9-F85ACE66EE31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,7 +76,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="NUMBER OF STUDENTS   SEATS FILLED"
-              DTS:DTSID="{C30AF476-7827-40CF-944F-D735BBFD2566}"
+              DTS:DTSID="{5B3759CD-2D7A-4E8B-AC42-64B7699F90F5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="NUMBER OF SECTIONS"
-              DTS:DTSID="{5FDDD3CE-E0DE-44F0-B4F8-9E2908D7D3CD}"
+              DTS:DTSID="{95DAF40E-E3FF-4159-8DFB-2509B5C1B8A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +94,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="AVERAGE CLASS SIZE"
-              DTS:DTSID="{51CF1E33-EB2B-4AB1-A43E-C34F4EFED6CC}"
+              DTS:DTSID="{D3491151-3461-45E1-A212-A91B22D84BB9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,15 +102,15 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="SIZE OF SMALLEST CLASS"
-              DTS:DTSID="{AEE70C78-0FDE-47FC-9E7E-B7080F75ECD3}"
+              DTS:DTSID="{D2A8634B-8DC3-41F9-834D-50169CB3D81C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter="_x000A_"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="SIZE OF LARGEST CLASS"
-              DTS:DTSID="{B2E9FDD0-338F-4837-97C3-C4F14D1C3980}"
+              DTS:DTSID="{FB538EC7-7FAB-499C-9B47-FFDC22D38772}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -122,12 +122,12 @@
       DTS:CreationName=""
       DTS:DTSID="{49CB0CE0-E147-4433-A095-2F02FB5E0EC8}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[User::ArchivePath]  + REPLACE(REPLACE(REPLACE((DT_WSTR, 100) @[System::StartTime],&quot;:&quot;, &quot;_&quot;),&quot;-&quot;, &quot;_&quot;),&quot; &quot;, &quot;_&quot;)   + &quot;_&quot; + @[User::FileName]"
+      DTS:Expression="@[User::ArchivePath]  + REPLACE(REPLACE(REPLACE((DT_WSTR, 100) @[System::StartTime],&quot;:&quot;, &quot;_&quot;),&quot;.&quot;, &quot;_&quot;),&quot; &quot;, &quot;_&quot;)   + &quot;_&quot; + @[User::FileName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="ArchiveFilePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probkaArc\Archived\02.02.2019_15_00_51_XXX.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\Archived\02_02_2019_15_50_04_XXX.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -138,7 +138,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ArchivePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probkaArc\Archived\</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\Archived\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -149,7 +149,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="CurrentFilePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probkaArc\XXX.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\XXX.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -167,7 +167,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FolderPath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probkaArc\</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -207,7 +207,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probkaArc\" />
+              Folder="D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\" />
             <FEFEProperty
               FileSpec="*.csv" />
             <FEFEProperty
@@ -425,7 +425,7 @@
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
-                  localeId="1033"
+                  localeId="1045"
                   name="Flat File Source"
                   usesDispositions="true"
                   version="1">
@@ -1011,8 +1011,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{C2DFF94D-7E71-48E4-BEE3-B9DA265F7DE3}"
-          DTS:ObjectName="{C2DFF94D-7E71-48E4-BEE3-B9DA265F7DE3}"
+          DTS:DTSID="{92696F05-A654-4E29-BD70-B45A42F8DE8E}"
+          DTS:ObjectName="{92696F05-A654-4E29-BD70-B45A42F8DE8E}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FileName" />
       </DTS:ForEachVariableMappings>
@@ -1105,7 +1105,7 @@
           PanelSize="322,231"
           Size="322,274"
           Id="Package\Foreach Loop Container"
-          TopLeft="166,228" />
+          TopLeft="166,202" />
         <NodeLayout
           Size="130,42"
           Id="Package\trunc table"
@@ -1138,14 +1138,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,52.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1197,9 +1197,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1245,9 +1243,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

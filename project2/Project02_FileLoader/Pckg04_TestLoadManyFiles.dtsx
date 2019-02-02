@@ -7,12 +7,12 @@
   DTS:CreatorName="ITK\tomek"
   DTS:DTSID="{682E3773-08F1-4FA2-808B-03AB443F1448}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="14.0.3002.113"
   DTS:LocaleID="1045"
   DTS:ObjectName="Pckg04_TestLoadManyFiles"
   DTS:PackageType="5"
-  DTS:VersionBuild="36"
-  DTS:VersionGUID="{FFA092A2-101D-4ECE-AF22-732608FB4553}">
+  DTS:VersionBuild="37"
+  DTS:VersionGUID="{E99B1621-BE83-40AE-B157-75946C1408AD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -32,7 +32,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probka\">
+          DTS:ConnectionString="D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -127,7 +127,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="CurrentFilePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probka\</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -146,7 +146,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FolderPath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probka\</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -167,7 +167,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\tomek\Desktop\HD SSIS\Lesson09 SSIS Zaawasowany2\_dane\_raporty_szkolne_probka\" />
+              Folder="D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\" />
             <FEFEProperty
               FileSpec="*.csv" />
             <FEFEProperty
@@ -510,7 +510,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[TestManyFiles]</property>
+                      name="OpenRowset">[dbo].[TestManyFiles]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -519,7 +519,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -722,8 +722,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{158C4818-FC15-4E3C-970D-7042E1AD2E12}"
-          DTS:ObjectName="{158C4818-FC15-4E3C-970D-7042E1AD2E12}"
+          DTS:DTSID="{34A9D629-21FD-4597-8DAA-443BD1C9C41C}"
+          DTS:ObjectName="{34A9D629-21FD-4597-8DAA-443BD1C9C41C}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FileName" />
       </DTS:ForEachVariableMappings>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Pckg03_TestLoad1FileParamFixDTs"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{C74B1B28-FBB9-4431-A62E-85656B781FA3}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{D65E7004-A62F-4B09-838C-96655A694B9E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -694,7 +694,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\" />
+              Folder="D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka" />
             <FEFEProperty
               FileSpec="*.csv" />
             <FEFEProperty
@@ -734,8 +734,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{9ED41A1F-DF8C-4AAA-A831-997E5F00E500}"
-          DTS:ObjectName="{9ED41A1F-DF8C-4AAA-A831-997E5F00E500}"
+          DTS:DTSID="{0AACC12A-E753-4358-9BB3-1986EA419F4A}"
+          DTS:ObjectName="{0AACC12A-E753-4358-9BB3-1986EA419F4A}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FileName" />
       </DTS:ForEachVariableMappings>
