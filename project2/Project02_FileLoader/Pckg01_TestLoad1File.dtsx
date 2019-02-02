@@ -7,14 +7,117 @@
   DTS:CreatorName="ITK\tomek"
   DTS:DTSID="{3A6EF5FB-36AE-486A-91D3-193DDFDC521F}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="14.0.3002.113"
   DTS:LocaleID="1045"
   DTS:ObjectName="Pckg01_TestLoad1File"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{E3894705-83B3-4CD1-979D-0DDE49F76EAB}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{7B728995-4F53-4121-96FC-A98A0A89E25B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{70AA331B-7B14-46CF-B5FE-0BB2D57EBD56}"
+      DTS:ObjectName="FlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="D:\Users\franciszek.saklawski\Documents\70767DataWarehouse-master\Lesson09 SSIS Advanced02\_data\_raporty_szkolne_probka\K002.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SCHOOL CODE"
+              DTS:DTSID="{B57E7342-9DCF-4974-9F28-EC69FA6BACE5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SCHOOL NAME"
+              DTS:DTSID="{9C1E8AA5-9906-4CF9-9C1D-C84CEF7AF66D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRADE "
+              DTS:DTSID="{B43C96F9-F2DE-4989-B0C9-A6404F785CA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PROGRAM TYPE"
+              DTS:DTSID="{FA688D39-3A5A-45C1-8B05-231DBF363906}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NUMBER OF STUDENTS   SEATS FILLED"
+              DTS:DTSID="{AFD3390B-1AC9-4408-BAB2-86758D5CE3AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NUMBER OF SECTIONS"
+              DTS:DTSID="{CB848FDC-3E47-453B-BDE5-A0DB17AF233D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AVERAGE CLASS SIZE"
+              DTS:DTSID="{2353C26D-38BA-4E84-9D90-CC5E8D823C8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SIZE OF SMALLEST CLASS"
+              DTS:DTSID="{7788D7D3-37ED-420B-9E26-44CEB3F2D436}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SIZE OF LARGEST CLASS"
+              DTS:DTSID="{48A153CC-E64E-40BD-8367-C86993A5E0DB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -53,8 +156,8 @@
               <connections>
                 <connection
                   refId="Package\DFTSchool\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{70AA331B-7B14-46CF-B5FE-0BB2D57EBD56}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[FlatFile]"
+                  connectionManagerID="Package.ConnectionManagers[FlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[FlatFile]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -373,7 +476,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -614,13 +717,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\DFTSchool\Flat File Source"
-          TopLeft="119,47" />
-        <NodeLayout
           Size="171,42"
           Id="Package\DFTSchool\OLE DB Destination"
           TopLeft="261,170" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\DFTSchool\Flat File Source"
+          TopLeft="119,47" />
         <EdgeLayout
           Id="Package\DFTSchool.Paths[Flat File Source Output]"
           TopLeft="194.5,89">
