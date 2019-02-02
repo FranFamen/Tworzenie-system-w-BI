@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Pckg03_ForLoopAssign"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{8545A160-BC95-42A8-8E69-8F851E67C86E}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{921B09A0-E207-48FB-89A1-3CBA038BBF6B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -325,8 +325,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{2B7E331C-5FF2-48C1-9276-F5568D1BA255}"
-          DTS:ObjectName="{2B7E331C-5FF2-48C1-9276-F5568D1BA255}"
+          DTS:DTSID="{CA0D0C68-72FC-43AA-BE77-B3DF9A96C674}"
+          DTS:ObjectName="{CA0D0C68-72FC-43AA-BE77-B3DF9A96C674}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::ProductKey" />
       </DTS:ForEachVariableMappings>
